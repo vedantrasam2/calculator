@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.js"></script>
+</head>
+<body>
+    <h2 class=" pt-5 ps-5 ms-5">Basic Calculator</h2>
+    <div class="container d-flex flex-row  ms-5 ps-5 mt-3 ">
+    <div class="card" style="width: 345px; height: 500px;">
+        <input class="bg-dark text-white"  type="text" value="0" style="height: 50px;" >
+        <input class="bg-dark text-white"  type="text" value="0" style="height: 50px;" >
+        <div class="d-flex flex-row">
+        <button type="button" onclick="getval('+')" class="btn btn-primary mt-3 ms-4 ps-2 " style="width: 60px;" >+</button>
+        <button type="button" onclick="getval('-')"class="btn btn-primary mt-3 ms-3  ps-2 " style="width: 60px;" >-</button>
+        <button type="button" onclick="getval('*')"class="btn btn-primary mt-3 ms-3 ps-2 " style="width: 60px;" >*</button>
+        <button type="button" onclick="getval('/')"class="btn btn-primary mt-3 ms-3 ps-2 " style="width: 60px;" >/</button>
+        </div>
+        <div class="d-flex flex-row">
+            <button type="button"onclick="getval('7')" class="btn btn-secondary mt-3 ms-4 ps-2 " style="width: 60px;" >7</button>
+            <button type="button"onclick="getval('8')" class="btn btn-secondary mt-3 ms-3  ps-2 " style="width: 60px;" >8</button>
+            <button type="button"onclick="getval('9')" class="btn btn-secondary mt-3 ms-3 ps-2 " style="width: 60px;" >9</button>
+            <div style="height: 50px;">
+            <button type="button" onclick="getans()" class="btn btn-primary mt-3 ms-3 ps-2 " style="width: 60px; height: 200px;" >=</button>
+            </div>    
+        </div>
+         
+        <div class="d-flex flex-row">
+            <button type="button"onclick="getval('4')" class="btn btn-secondary mt-3 ms-4 ps-2 " style="width: 60px;" >4</button>
+            <button type="button"onclick="getval('5')" class="btn btn-secondary mt-3 ms-3  ps-2 " style="width: 60px;" >5</button>
+            <button type="button"onclick="getval('6')" class="btn btn-secondary mt-3 ms-3 ps-2 " style="width: 60px;" >6</button>
+            </div>
+            <div class="d-flex flex-row">
+                <button type="button"onclick="getval('1')" class="btn btn-secondary mt-3 ms-4 ps-2 " style="width: 60px;" >1</button>
+                <button type="button"onclick="getval('2')" class="btn btn-secondary mt-3 ms-3  ps-2 " style="width: 60px;" >2</button>
+                <button type="button"onclick="getval('3')" class="btn btn-secondary mt-3 ms-3 ps-2 " style="width: 60px;" >3</button>
+                </div>
+                <div class="d-flex flex-row">
+                    <button type="button"onclick="getval('0')" class="btn btn-secondary mt-3 ms-4 ps-2 " style="width: 60px;" >0</button>
+                    <button type="button"onclick="getval('.')" class="btn btn-primary mt-3 ms-3  ps-2 " style="width: 60px;" >.</button>
+                    <button type="button" onclick="ac()" class="btn btn-danger mt-3 ms-3 ps-2 " style="width: 60px;" >AC</button>
+                    <button type="button" onclick="backSpace()" class="btn btn-danger mt-3 ms-3 ps-2 " style="width: 60px;" ><-</button>
+                    </div>  
+                    <button type="button" onclick="history()" class="btn btn-danger mt-3 ms-3 ps-2 " style="width: 80px;" >History</button>    
+    </div>
+
+    </div>
+    <div class="History text-dark">
+    
+    </div>
+    <script src="javascript/cal.js"></script>
+</body>
+</html>
