@@ -1,2 +1,2 @@
 # calculator
-I made a basic calculator with the help of javasrcipt HTML,CSS 
+I made a basic calculator by using javasrcipt HTML,CSS 
